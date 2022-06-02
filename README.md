@@ -1,4 +1,4 @@
-# enjoy-project-tool
+# olkj-cli
 
 - [x] 创建项目模板，目前支持 vue3,node-command,rollup-package
 - [x] 自定义选择模板版本
@@ -22,11 +22,11 @@
 ## 使用
 
 ```shell
-npm i enjoy-project-tool -g
+npm i olkj-cli -g
 ```
 
 ```shell
-enjoy create
+olkj create
 ```
 
 ## 与之关联的项目

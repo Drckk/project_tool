@@ -39,7 +39,7 @@ const preAction = async (cb: () => void, command?: string) => {
       // 用户是否选择了用最新版本运行
       if (isUpdate) {
         // 更新完毕重新在子进程运行当前命令
-        spawn(`enjoy ${command || program.args[0]}`, ['-s'], {
+        spawn(`olkj ${command || program.args[0]}`, ['-s'], {
           stdio: 'inherit',
           shell: true
         })

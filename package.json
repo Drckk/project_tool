@@ -1,7 +1,7 @@
 {
-  "name": "enjoy-project-tool",
-  "version": "1.4.2",
-  "description": "Enjoy 🌈 命令行助手",
+  "name": "olkj-cli",
+  "version": "1.0.0",
+  "description": "",
   "main": "dist/main.js",
   "scripts": {
     "dev": "nodemon",
@@ -18,7 +18,7 @@
     ]
   },
   "bin": {
-    "enjoy": "dist/main.js"
+    "olkj": "dist/main.js"
   },
   "author": "",
   "license": "ISC",

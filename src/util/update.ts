@@ -17,7 +17,7 @@ export const compareNewVersion = async (): Promise<boolean | string> => {
   return new Promise(async (resolve) => {
     spinner.text = '正在检查工具是否是最新版...'
     spinner.start()
-    const result = await flying.get('https://registry.npmjs.org/enjoy-project-tool')
+    const result = await flying.get('https://registry.npmjs.org/olkj-cli')
     const latest = result.data['dist-tags']['latest'] as string
     // 判断当前版本是否小于最新版本
     if (semver.lt(pkg.version, latest)) {
@@ -45,7 +45,7 @@ const update = (targerVersion: string) => {
       // 用户如果选择了使用最新版本更新
       if (res.useLatestVersion) {
         // 如果用户选择更新，调用安装方法
-        await concurrently([`npm --registry ${CNPM_URL} i enjoy-project-tool@${targerVersion} -g`], { prefix: 'none' })
+        await concurrently([`npm --registry ${CNPM_URL} i olkj-cli@${targerVersion} -g`], { prefix: 'none' })
         resolve(true)
       } else {
         // 用户没有选择
